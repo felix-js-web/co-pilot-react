@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/mono')
+    fetch('http://localhost:8099/mono')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
